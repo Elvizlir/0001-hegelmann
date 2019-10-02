@@ -210,6 +210,9 @@
 			display: block;
 			font-weight: normal;
 			min-width: 200px;
+			&:hover{
+				background-color: $primary;
+			}
 		}
 	}
 
@@ -244,6 +247,8 @@
 	}
 	a{
 		@include rfs(rem(34));
+		text-decoration: none !important;
+		
 		@include media-breakpoint-up(md) {
 
 			color: #ffffff !important;
@@ -272,6 +277,9 @@
 		font-style: italic;
 		top: 100%;
 		width: 100%;
+		&:hover{
+			background-color: $primary;
+		}
 		a{
 			font-size: rem(18) !important;
 			color: #ffffff !important;
@@ -308,16 +316,23 @@ $h: rem(4);
 	top: $h;
 
 
+	span{
+		@include a-cent(y);
+	}
+	
 	span:after,
 	span:before {
 		content: "";
 		position: absolute;
 		left: 0;
-		top: $h*2;
 	}
+	span:before {
 
+		
+		top: $h * 2;
+	}
 	span:after {
-		top: $h * 4;
+		bottom: $h * 2;
 	}
 
 	span {
@@ -347,13 +362,18 @@ $h: rem(4);
 	&.on span {
 		background-color: transparent;
 	}
-
 	&.on span:before {
-		transform: rotate(45deg) translate(em(0), 0);
+		top: 0;
+		bottom: 0;
+		transform: rotate(45deg) ;
+		transform-origin: 50% 50%;
 	}
 
 	&.on span:after {
-		transform: rotate(-45deg) translate(em(5), em(-5));
+		top: 0;
+		bottom: 0;
+		transform: rotate(-45deg) ;
+		transform-origin: 50% 50%;
 	}
 }
 
