@@ -349,11 +349,11 @@ $h: rem(4);
 	}
 
 	&.on span:before {
-		transform: rotate(45deg) translate(em(0), 1px);
+		transform: rotate(45deg) translate(em(0), 0);
 	}
 
 	&.on span:after {
-		transform: rotate(-45deg) translate(em(4), em(-4));
+		transform: rotate(-45deg) translate(em(5), em(-5));
 	}
 }
 
@@ -372,7 +372,7 @@ $h: rem(4);
 
 	&__inner {
 		background-color: $secondary;
-		padding: 5% 0;
+		padding-bottom: 5%;
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
 		height: 100%;
