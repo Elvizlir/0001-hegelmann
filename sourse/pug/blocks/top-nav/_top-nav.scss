@@ -277,15 +277,15 @@
 		font-style: italic;
 		top: 100%;
 		width: 100%;
-		&:hover{
-			background-color: $primary;
-		}
 		a{
 			font-size: rem(18) !important;
 			color: #ffffff !important;
 			padding: rem(10);
 			display: block;
 			font-weight: normal;
+								&:hover{
+									background-color: $primary;
+								}
 		 
 		}
 		a{
