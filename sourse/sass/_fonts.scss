@@ -2,6 +2,6 @@
 
 @include font-face (Prompt, "../fonts/Prompt-Regular", $file-formats: woff2 woff ttf);
 @include font-face (Prompt, "../fonts/Prompt-Bold", bold, $file-formats: woff2 woff ttf);
-@include font-face (Prompt, "../fonts/Prompt-Light", 300, $file-formats: woff2 woff ttf);
+@include font-face (Prompt, "../fonts/Prompt-ExtraLight", 100, $file-formats: woff2 woff ttf);
 @include font-face (Prompt, "../fonts/Prompt-BoldItalic", bold, italic, $file-formats: woff2 woff ttf);
  

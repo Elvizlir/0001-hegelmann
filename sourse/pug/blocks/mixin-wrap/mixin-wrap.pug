@@ -105,10 +105,22 @@ mixin soc()
 //- WP menu
 mixin mnu()
 	-
-		var nav= ["HOME","ABOUT US","SERVICES","FLEET","CONTACT"]
+		var nav= [  "SERVICES","FLEET","CONTACT"]
 	ul.menu
+		li.menu-item: a(href="#") HOME
+		li.menu-item.menu-item-has-children
+			a(href="#") ABOUT US
+			ul.sub-menu
+				li.menu-item: a(href="#")  About Hegelmann
+				li.menu-item: a(href="#")  Our philosophy
+				li.menu-item: a(href="#")  Structure
+				li.menu-item: a(href="#")  Financial reports
+				li.menu-item: a(href="#")  Social responsibility
+				li.menu-item: a(href="#")  Sustainability
+				li.menu-item: a(href="#")  Certificates
+				li.menu-item: a(href="#")  News room
 		each linkName in nav
-			li.menu-item: a(href="#")= linkName
+			li.menu-item: a(href="#")= linkName 
 
 //- menu
 mixin mnu-aside()
@@ -181,10 +193,14 @@ mixin lang-map(cl)
 			+e.toggle
 				+icon('map')
 			+e.block
-				+e.item Lorem ipsum dolor sit.
-				+e.item Lorem sit.
-				+e.item Lorem ipsum  sit.
-				+e.item Lorem ipsum 
+				+e.item
+					a(href="#") Lorem ipsum dolor sit.
+				+e.item
+					a(href="#") Lorem sit.
+				+e.item
+					a(href="#") Lorem ipsum  sit.
+				+e.item
+					a(href="#") Lorem ipsum 
 
 	.col-auto&attributes(attributes)
 		+b.lang-block

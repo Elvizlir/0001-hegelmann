@@ -6,7 +6,7 @@
 	@include rfs(rem(35))
 	@include media-breakpoint-up(xxxl) {
 
-		padding-right: em(18);
+		padding-right: em(10);
 	}
 	position: relative;
 	z-index: 4;
@@ -70,6 +70,7 @@
 				padding-top: rem(6);
 				padding-bottom: rem(6);
 				flex-grow: 1;
+				position: relative;
 				// margin-right: rem(18);
 				// &:not(:last-chi)
 			}
@@ -82,11 +83,29 @@
 				background-color: $primary;
 			}
 		}
+		li:hover .sub-menu{
+			display: block;
+		}
+		.sub-menu{
+			display: none;
+			position: absolute;
+			box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.18);
+			background-color: $light;
+			text-align: left;
+			left: 0;
+			top: 100%;
+			a{
+				// background-color: transparent !important;
+				display: block;
+				min-width: em(205);
+				transform: skewX(0);
+				font-style: italic;
+			}
+			// margin-top: em(2);
+		}
 	}
  
-	.sub-menu{
-		display: none;
-	}
+
 
 	// 
 	@include media-breakpoint-up(xl) {}
@@ -177,6 +196,25 @@
 	}
 	&__block{
 		display: none;
+		position: absolute;
+		background-color: $light;
+		z-index: 2;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.38);
+		right: 0;
+		font-style: italic;
+		top: 100%;
+		a{
+			font-size: rem(18) !important;
+			color: #ffffff !important;
+			padding: rem(10);
+			display: block;
+			font-weight: normal;
+			min-width: 200px;
+		}
+	}
+
+	&:hover &__block{
+		display: block;
 	}
 }
 .dropdown__toggle{
@@ -220,14 +258,43 @@
 				color: $secondary !important;
 			}
 	.sub-menu{
+		// display: none;
+		// display: block !important;
+		position: absolute;
+		right: 0;
+		top: 100%;
 		display: none;
+		position: absolute;
+		background-color: $light;
+		z-index: 2;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.38);
+		right: 0;
+		font-style: italic;
+		top: 100%;
+		width: 100%;
+		a{
+			font-size: rem(18) !important;
+			color: #ffffff !important;
+			padding: rem(10);
+			display: block;
+			font-weight: normal;
+		 
+		}
+		a{
+
+		}
+	}
+	&:hover{
+		.sub-menu{
+			display: block;
+		}
 	}
 }
 
 // мобильное меню
 
 // мобильное меню
-$h: em(2);
+$h: rem(4);
 
 .toggle-menu-mobile {
 	display: block;
@@ -266,7 +333,7 @@ $h: em(2);
 
 			font-size: rem(40);
 		}
-		width: 1em;
+		// width: 1em;
 		height: $h;
 		background-color: $primary;
 		transition: all 0.3s;
@@ -282,11 +349,11 @@ $h: em(2);
 	}
 
 	&.on span:before {
-		transform: rotate(45deg) translate(em(-1), 0px);
+		transform: rotate(45deg) translate(em(0), 1px);
 	}
 
 	&.on span:after {
-		transform: rotate(-45deg) translate(em(3), em(-4));
+		transform: rotate(-45deg) translate(em(4), em(-4));
 	}
 }
 
@@ -375,6 +442,7 @@ $h: em(2);
 			padding: 10px;
 			display: block;
 			text-transform: uppercase;
+			text-decoration: none !important;
  
 		}
 	}

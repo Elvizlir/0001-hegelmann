@@ -38,6 +38,9 @@
       } 
     }
   }
+  a{
+    text-decoration: none !important;
+  }
 // 
 @include media-breakpoint-up(xl) {}
 
@@ -70,7 +73,10 @@
 
 @include media-breakpoint-down(md) {}
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+  z-index: 40;
+  position: relative;
+}
 
 @include media-breakpoint-down(xs) {
   .dropdown-col{
@@ -88,7 +94,7 @@
   // margin-left: rem(-80);
   @include media-breakpoint-up(xl) {
     
-    width: em(455 * 16 / 34 );
+    width: em(465 * 16 / 34 );
     position: absolute;
     min-height: em(1535 * 16 /34);
     transform: skewX(-17deg);
