@@ -1,7 +1,23 @@
 .footer {
-		
-
-
+		background-color: $primary-dark;
+    // padding-top: rem(10);
+    // padding-bottom: rem(10);
+    &__col{
+      padding-top: rem(20px);
+      padding-bottom: rem(20px);
+    }
+.row{
+  @include media-breakpoint-up(xxxl) {
+    
+    justify-content: space-between;
+  }
+  // justify-content: center;
+}
+&__logo-wrap{
+  img{
+    @extend .res-i;
+  }
+}
 // 
 @include media-breakpoint-up(xl) {}
 
@@ -40,4 +56,40 @@
 @include media-breakpoint-down(sm) {}
 
 @include media-breakpoint-down(xs) {}
+}
+.footer-nav{
+  @include media-breakpoint-up(xxxl) {
+
+    display: flex;
+  }
+  @include roww(13);
+  ul{
+    list-style-type: none;
+  }
+  &__title{
+    color: #efefef;
+    text-transform: uppercase;
+    @include rfs(rem(30));
+    letter-spacing: 0.4px;
+    font-weight: bold;
+  }
+  a{
+    color: #efefef;
+    // font-family: "Prompt - Extra Light";
+    font-weight: 300; 
+    font-weight: 400;
+    // Text style for "Express ,"
+    letter-spacing: rem(0.26px);
+    font-size: rem(18px);
+  }
+  &__nav{
+    border-left: 2px solid $primary;
+    // padding-left: 13px;
+    &--col{
+      columns: 2;
+    }
+  }
+  ul{
+    margin-bottom: 0;
+  }
 }

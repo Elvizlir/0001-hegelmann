@@ -20,10 +20,11 @@ html {
 
 body,
 html {
+	// min-height: 10000px;
 	font-size: $em-base;
 	// @include font-size(1rem);
 }
-
+ 
 body {
 	min-width: 320px;
 	position: relative;
@@ -473,4 +474,11 @@ a{
 .bg-wrap{
 	position: relative;
 	z-index: 2;
+}
+
+.container-fluid{
+	@include media-breakpoint-up(xxxl) {
+		padding-left: 46px;
+		padding-right: 46px;
+	}
 }

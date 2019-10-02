@@ -18,7 +18,7 @@
     <meta property="og:image:width" content="968">
     <meta property="og:image:height" content="504">
     <!-- Custom Browsers Color-->
-    <meta name="theme-color" content="#3361d8">
+    <meta name="theme-color" content="#003e84">
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.min.css">
@@ -27,6 +27,338 @@
 <script>!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);</script>
 <!--[if lt IE 11]><p class="browsehappy">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
     <div class="main-wrapper">
+      <div class="menu-mobile menu-mobile--js d-xl-none">
+        <div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+        </div>
+        <div class="menu-mobile__inner">
+          <div class="menu-mobile__inner-wrapper">
+            <ul class="menu">
+              <li class="menu-item"><a href="#">HOME</a></li>
+              <li class="menu-item"><a href="#">ABOUT US</a></li>
+              <li class="menu-item"><a href="#">SERVICES</a></li>
+              <li class="menu-item"><a href="#">FLEET</a></li>
+              <li class="menu-item"><a href="#">CONTACT</a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu-item menu-item-has-children"><a href="#">TO CLIENTS</a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">ADMINISTRATORS</a></li>
+                  <li class="menu-item"><a href="#">Drivers</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children"><a href="#">TO CARRIERS</a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">ADMINISTRATORS</a></li>
+                  <li class="menu-item"><a href="#">Drivers</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children"><a href="#">CAREER</a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">ADMINISTRATORS</a></li>
+                  <li class="menu-item"><a href="#">Drivers</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children"><a href="#">FOR DRIVERS</a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">ADMINISTRATORS</a></li>
+                  <li class="menu-item"><a href="#">Drivers</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="text-right"></div>
+          </div>
+        </div>
+      </div>
+      <!--  мобильное меню-->
+      <!-- start HEADER.header-->
+      <header class="header block-with-lazy">
+        <!-- start .top-line-->
+        <div class="top-line block-with-lazy">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="aside-bar">
+                  <div class="aside-bar__head">
+                    <div class="aside-bar__logo-wrap"><a href="#"><img src="img/@2x/logo.png" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="d-none d-xl-block">
+                    <ul class="menu">
+                      <li class="menu-item menu-item-has-children"><a href="#">TO CLIENTS</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="#">ADMINISTRATORS</a></li>
+                          <li class="menu-item"><a href="#">Drivers</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item menu-item-has-children"><a href="#">TO CARRIERS</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="#">ADMINISTRATORS</a></li>
+                          <li class="menu-item"><a href="#">Drivers</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item menu-item-has-children"><a href="#">CAREER</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="#">ADMINISTRATORS</a></li>
+                          <li class="menu-item"><a href="#">Drivers</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item menu-item-has-children"><a href="#">FOR DRIVERS</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="#">ADMINISTRATORS</a></li>
+                          <li class="menu-item"><a href="#">Drivers</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="top-line__logo-col col-auto d-none d-xl-block">
+                <!-- picture-->
+                <picture> 
+                  <source srcset="img/@2x/webp/logo-1.webp" type="image/webp"/>
+                  <!-- /webp images  --><img src="img/@2x/logo-1.png" alt=""/>
+                </picture>
+                <!-- /picture-->
+              </div>
+              <div class="top-line__logo-col col-auto d-none d-xl-block">
+                <!-- picture-->
+                <picture> 
+                  <source srcset="img/@2x/webp/logo-2.webp" type="image/webp"/>
+                  <!-- /webp images  --><img src="img/@2x/logo-2.png" alt=""/>
+                </picture>
+                <!-- /picture-->
+              </div>
+              <div class="top-line__logo-col col-auto d-none d-xl-block">
+                <!-- picture-->
+                <picture> 
+                  <source srcset="img/@2x/webp/logo-3.webp" type="image/webp"/>
+                  <!-- /webp images  --><img src="img/@2x/logo-3.png" alt=""/>
+                </picture>
+                <!-- /picture-->
+              </div>
+              <div class="top-line__logo-col col-auto d-none d-xl-block">
+                <!-- picture-->
+                <picture> 
+                  <source srcset="img/@2x/webp/logo-4.webp" type="image/webp"/>
+                  <!-- /webp images  --><img src="img/@2x/logo-4.png" alt=""/>
+                </picture>
+                <!-- /picture-->
+              </div>
+              <div class="dropdown-col col-auto d-md-none ">
+                <div class="dropdown">
+                  <div class="dropdown__toggle">
+                    <svg class="icon icon-map ">
+                      <use xlink:href="img/svg/sprite.svg#map"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__block">
+                    <div class="dropdown__item">Lorem ipsum dolor sit.
+                    </div>
+                    <div class="dropdown__item">Lorem sit.
+                    </div>
+                    <div class="dropdown__item">Lorem ipsum  sit.
+                    </div>
+                    <div class="dropdown__item">Lorem ipsum 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-md-none ">
+                <div class="lang-block">
+                  <ul class="menu">
+                    <li class="menu-item"><a href="#"><span> EN</span></a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#"><span>RU</span></a></li>
+                        <li class="menu-item"><a href="#"><span>UA</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-line__logo-col col-auto d-xl-none">
+                <div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end .top-line-->
+        <!-- start top-nav-->
+        <div class="top-nav block-with-lazy">
+          <div class="container">
+            <div class="row">
+              <div class="col-xxxl col-auto d-none d-xl-block">
+                <div class="top-nav__menu">
+                  <ul class="menu">
+                    <li class="menu-item"><a href="#">HOME</a></li>
+                    <li class="menu-item"><a href="#">ABOUT US</a></li>
+                    <li class="menu-item"><a href="#">SERVICES</a></li>
+                    <li class="menu-item"><a href="#">FLEET</a></li>
+                    <li class="menu-item"><a href="#">CONTACT</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xxxl-auto col">
+                <div class="form-search">
+                  <form>
+                    <input type="text"/>
+                    <input id="searchsubmit" type="submit"/>
+                  </form>
+                </div>
+              </div>
+              <div class="dropdown-col col-auto d-none d-md-block">
+                <div class="dropdown">
+                  <div class="dropdown__toggle">
+                    <svg class="icon icon-map ">
+                      <use xlink:href="img/svg/sprite.svg#map"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__block">
+                    <div class="dropdown__item">Lorem ipsum dolor sit.
+                    </div>
+                    <div class="dropdown__item">Lorem sit.
+                    </div>
+                    <div class="dropdown__item">Lorem ipsum  sit.
+                    </div>
+                    <div class="dropdown__item">Lorem ipsum 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="lang-block">
+                  <ul class="menu">
+                    <li class="menu-item"><a href="#"><span> EN</span></a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#"><span>RU</span></a></li>
+                        <li class="menu-item"><a href="#"><span>UA</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end top-nav-->
+      </header>
+      <!-- end HEADER.header-->
+      <!-- start header-block-->
+      <div class="header-block">
+        <!-- picture-->
+        <picture> 
+          <source srcset="img/@2x/webp/2-layers.webp" type="image/webp"/>
+          <!-- /webp images  --><img src="img/@2x/2-layers.jpg" alt=""/>
+        </picture>
+        <!-- /picture-->
+      </div>
+      <!-- end header-block-->
+      <!-- start s-map-->
+      <section class="s-map"> 
+        <div class="s-map__map-wrap">
+          <!-- picture-->
+          <picture> 
+            <source srcset="img/@2x/webp/map.webp" type="image/webp"/>
+            <!-- /webp images  --><img src="img/@2x/map.jpg" alt=""/>
+          </picture>
+          <!-- /picture-->
+        </div>
+        <div class="s-map__block">
+          <div class="s-map__block-item">
+            <div class="s-map__block-item-title">NEW TRUCKS
+            </div>
+            <div class="s-map__block-item-text">2400
+            </div>
+          </div>
+          <div class="s-map__block-item">
+            <div class="s-map__block-item-title">DRIVERS 
+            </div>
+            <div class="s-map__block-item-text"> 2800
+            </div>
+          </div>
+          <div class="s-map__block-item">
+            <div class="s-map__block-item-title">MILLION KILOMETERS TRAVELED
+            </div>
+            <div class="s-map__block-item-text">  255
+            </div>
+          </div>
+          <div class="s-map__block-item">
+            <div class="s-map__block-item-title">TURNOVER 
+            </div>
+            <div class="s-map__block-item-text"> 420 MILLION
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end s-map-->
+      <footer class="footer block-with-lazy">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxxl-auto col align-self-center">
+              <div class="row">
+                <div class="footer__col col-sm-auto align-self-center">
+                  <div class="footer__logo-wrap"><a href="#"><img src="img/@2x/logo.png" alt=""/></a>
+                  </div>
+                </div>
+                <div class="footer__col col-sm-auto align-self-center">
+                  <div class="soc"><a class="soc__item" href="№" target="_blank">
+                    <svg class="icon icon-fb ">
+                      <use xlink:href="img/svg/sprite.svg#fb"></use>
+                    </svg></a><a class="soc__item" href="№" target="_blank">
+                    <svg class="icon icon-instagram ">
+                      <use xlink:href="img/svg/sprite.svg#instagram"></use>
+                    </svg></a><a class="soc__item" href="№" target="_blank">
+                    <svg class="icon icon-twitter ">
+                      <use xlink:href="img/svg/sprite.svg#twitter"></use>
+                    </svg></a><a class="soc__item" href="№" target="_blank">
+                    <svg class="icon icon-youtube ">
+                      <use xlink:href="img/svg/sprite.svg#youtube"></use>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="row">
+                <div class="footer__col col-auto">
+                  <div class="footer-nav">
+                    <div class="footer-nav__title">SERVICES
+                    </div>
+                    <div class="footer-nav__nav footer-nav__nav--col">
+                      <ul>
+                        <li class="menu-item menu-item-has-children"><a href="#">Express</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Hazardous Goods</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Auto &amp; Car Transport</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Automotive</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">High Value</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Health Care</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Food</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Waste and special transport</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Container Logistic</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Storage services</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__col col-auto">
+                  <div class="footer-nav">
+                    <div class="footer-nav__title">SERVICES
+                    </div>
+                    <div class="footer-nav__nav">
+                      <ul>
+                        <li class="menu-item menu-item-has-children"><a href="#">About us</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Fleet</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Jobs</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <div class="d-none">
       <div class="form-wrap modal-win modal-form" id="modal-call">
@@ -52,7 +384,7 @@
     </div>
     <!-- modal-->
     <script src="js/lazy.js"></script>
-    <script src="js/jquery.min.js"></script>
+    <script src="libs/jquery.min.js"></script>
     <!-- полифил для picture-->
     <script src="libs/picturefill.min.js"></script>
     <!-- полифил для object-fit-->

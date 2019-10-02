@@ -1,6 +1,7 @@
 
 
-@include font-face ("roboto", "../fonts/Roboto-Regular/Roboto-Regular", $file-formats: woff2 woff ttf);
-@include font-face ("roboto", "../fonts/Roboto-Bold/Roboto-Bold", bold, $file-formats: woff2 woff ttf);
-@include font-face ("roboto", "../fonts/Roboto-Medium/Roboto-Medium", 500, $file-formats: woff2 woff ttf);
-@include font-face ("roboto", "../fonts/Roboto-Black/Roboto-Black", 900, $file-formats: woff2 woff ttf);
+@include font-face (Prompt, "../fonts/Prompt-Regular", $file-formats: woff2 woff ttf);
+@include font-face (Prompt, "../fonts/Prompt-Bold", bold, $file-formats: woff2 woff ttf);
+@include font-face (Prompt, "../fonts/Prompt-Light", 300, $file-formats: woff2 woff ttf);
+@include font-face (Prompt, "../fonts/Prompt-BoldItalic", bold, italic, $file-formats: woff2 woff ttf);
+ 

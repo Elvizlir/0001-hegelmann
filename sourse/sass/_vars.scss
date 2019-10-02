@@ -40,19 +40,21 @@ $colors: () !default;
 $colors: map-merge(  ( ),  $colors);
 
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary-dark:       #003e84 !default;
+$primary:       #1eb2e7 !default;
+$secondary:     #888a8c !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #d6d5d3 !default;
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
+    "primary-dark":    $primary-dark,
     "primary":    $primary,
     "secondary":  $secondary,
     "success":    $success,
@@ -73,7 +75,7 @@ $body-color:                $gray-900 !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:     "roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:     Prompt, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $line-height-base:            1.5 !default;
 
@@ -84,7 +86,9 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
+  xxl: 1600px,
+  xxxl: 1900px
   // xxl: 1400px
 ) !default; 
 
@@ -93,11 +97,11 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  xs: 380px,
+  
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 100%
   // xxl: 1340px
 ) !default; 
 // Grid columns

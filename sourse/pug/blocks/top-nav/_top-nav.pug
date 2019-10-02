@@ -1,19 +1,28 @@
 
 mixin mob-mnu()
-	+b.toggle-menu-mobile--js.d-lg-none
-		span
-	+b.menu-mobile--js.d-lg-none
+	
+	+b.menu-mobile--js.d-xl-none
 		+b.toggle-menu-mobile--js
 			span
 		+e.inner
 		
-			+mnu()
-			.text-right
+			+e.inner-wrapper
+				+mnu()
+				+mnu-aside()
+				.text-right
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			+mnu()
-					
+			.row
+				.col-xxxl.col-auto.d-none.d-xl-block
+					+e.menu
+						+mnu()
+				.col-xxxl-auto.col
+					+b.form-search
+						form
+							input(type='text')
+							input#searchsubmit(type='submit')
+				+lang-map()(class="d-none d-md-block")
 	// end top-nav

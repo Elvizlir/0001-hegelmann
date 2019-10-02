@@ -1,4 +1,54 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
-			h2 footer
+			.row
+				.col-xxxl-auto.col.align-self-center
+					.row
+						+e.col.col-sm-auto.align-self-center
+							+e.logo-wrap
+								a(href="#")
+									img(src="img/@2x/logo.png", alt="")
+						+e.col.col-sm-auto.align-self-center
+							+soc
+							
+ 
+				.col-auto
+					.row
+						+e.col.col-auto
+							+b.footer-nav
+								+e.title SERVICES
+								+e.nav--col
+									ul
+										-
+											var nav= [
+												"Express",
+												"Hazardous Goods",
+												"Auto & Car Transport",
+												"Automotive",
+												"High Value",
+												"Health Care",
+												"Food",
+												"Waste and special transport",
+												"Container Logistic",
+												"Storage services",
+											]
+										each linkName in nav
+											li.menu-item.menu-item-has-children
+												a(href="#")= linkName
+				
+						+e.col.col-auto
+							+b.footer-nav
+								+e.title SERVICES
+								+e.nav
+									ul
+										-
+											var nav= [
+												"About us",
+												"Fleet",
+												"Jobs",
+												"Contact",
+											]
+										each linkName in nav
+											li.menu-item.menu-item-has-children
+												a(href="#")= linkName
+

@@ -8,15 +8,17 @@ block title
 
 include ../blocks/s-content/_s-content.pug
 include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-map/_s-map.pug
 
 block pagecontent
  
-	//- +mob-mnu()
-	//- +header()
-	//- 	+top-line()
-	//- 	+top-nav()
-	//- +header-block()
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+	+header-block()
 	//- +s-form()
+	+s-map
 	//- +s-contact()
-	//- +footer()
+	+footer()
 

@@ -2,5 +2,21 @@ mixin top-line()
 	// start .top-line
 	+b.top-line.block-with-lazy
 		.container
-			.row top-line
+			.row
+				.col
+					+b.aside-bar
+						+e.head
+							+e.logo-wrap
+								a(href="#")
+									img(src="img/@2x/logo.png", alt="")
+						.d-none.d-xl-block
+							+mnu-aside()
+				- for (var x = 1; x <= 4; x++)
+					+e.logo-col.col-auto.d-none.d-xl-block
+						+pic(`logo-${x}.png`,'','',0)
+				+lang-map()(class="d-md-none ")
+				+e.logo-col.col-auto.d-xl-none
+					//- .row
+					+b.toggle-menu-mobile--js
+						span
 	// end .top-line

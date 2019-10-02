@@ -1,6 +1,43 @@
 .top-line {
+  // @include media-breakpoint-up(md) {
 
-	
+  // }
+  background-color: #efefef;
+  padding-right: rem(10);
+  font-size: rem(34);
+  
+  .row{
+    // align-items: center;
+    @include roww(17)
+  }
+	&__logo-col{
+
+    padding-top: em(12 * 16 / 34);
+    padding-bottom: em(12 * 16 / 34);
+    text-align: center;
+    @include media-breakpoint-up(md) {
+
+      align-self: center; 
+    }
+    @include rfs(rem(74));
+    line-height: 1;
+    img{
+      width: auto;
+      max-height: 1em;
+    }
+    @include media-breakpoint-up(xl) {
+
+      &::before{
+        content: '';
+        width: 2px;
+        @include a-cent(y);
+        left: 0;
+        // height: calc(100% - #{rem(20)});
+        min-height: em(60* 16 / 34);
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,#a5a7a6 50%,rgba(255,255,255,1) 100%);
+      } 
+    }
+  }
 // 
 @include media-breakpoint-up(xl) {}
 
@@ -35,5 +72,174 @@
 
 @include media-breakpoint-down(sm) {}
 
-@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(xs) {
+  .dropdown-col{
+    display: none;
+  }
+}
+}
+
+.aside-bar{
+  left: 0;
+	top: 0;
+	background-color: $primary-dark ;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.35);
+  @include rfs(rem(34));
+  // margin-left: rem(-80);
+  @include media-breakpoint-up(xl) {
+    
+    width: em(455 * 16 / 34 );
+    position: absolute;
+    min-height: em(1535 * 16 /34);
+    transform: skewX(-17deg);
+    transform-origin: top right;
+    display: block;
+    &::before{
+      display: none;
+    }
+  }
+  position: relative;
+  &::before{
+    content: '';
+    width: 100vw;
+    height: 100%;
+    background-color: inherit;
+    right: 99%;
+    position: absolute;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  
+	&__head{
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+
+      @include rfs(rem(74));
+      transform: skewX(17deg);
+      padding: em(8 * 16 /34) em(33 * 16 /34) em(65 * 16 /34) em(30 * 16 /34); 
+    }
+    padding: rem(10) rem(10); 
+    line-height: 1;
+    img{
+      max-width: 100%;
+      @include media-breakpoint-up(xl) {
+
+        height: 1em;
+      }
+      height: auto;
+
+    }
+  }
+  // ?__ищвнХ
+ a{
+   text-decoration: none !important;
+   letter-spacing: 0.41px;
+ }
+ 
+    .menu>li{
+      margin-bottom: em(16);
+      @include  mt;
+      >a{
+        margin-left: auto;
+        // text-align: right;
+        // зд  куь
+        @include media-breakpoint-up(xxxl) {
+                
+        }
+      padding-left: em(110 * 16 / 34);
+      
+      padding-right: em(20 * 16 / 34);
+      transform: skewX(17deg);
+      // display: flex;
+      // text-align: right;
+      // justify-content: center;jcfe
+      
+    }
+    &:nth-child(1) {
+      a{  
+        @include media-breakpoint-up(xxxl) {
+        }
+        // max-width: em(240 ); 
+        max-width: em(212); 
+        }
+    }
+     
+    &:nth-child(2) {
+      a{    
+        max-width: em(212 - 15 );
+          @include media-breakpoint-up(xxxl) {
+          }
+          // max-width: em(230  - 15 );
+          }
+    }
+     
+    &:nth-child(3) {
+      a{     
+         @include media-breakpoint-up(xxxl) {
+        }
+        max-width: em(212 - 28) 
+          // max-width: em(230  - 28) 
+         }
+    }
+     
+    &:nth-child(4) {
+      a{    
+          @include media-breakpoint-up(xxxl) {
+          }
+          max-width: em(212 - 42) 
+          // max-width: em(230  - 42) 
+          }
+    }
+     
+  }
+    ul{
+      list-style-type: none;
+
+}
+  .menu{
+   
+    font-weight: bold;
+    a{
+      color: #ffffff;
+      display: block;
+      
+      padding: em(3) em(10);
+      text-transform: uppercase;
+    }
+    &-item{
+    }
+  }
+  .menu-item-has-children{
+    position: relative;
+    &:hover{
+      background-color: #1eb2e7;
+      box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.18);
+      .sub-menu{
+        display: block;
+      }
+    }
+  }
+       .sub-menu{
+            position: absolute;
+            left: 100%;
+            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.18);
+            background-color: #d6d5d3;
+            // transform: skewX(deg);
+            top: 0;
+            display: none;
+            a{ 
+             
+              padding: em(3) em(20);
+              color: #888a8c !important;
+              transform: skewX(17deg);
+            }
+            li:hover{
+              background-color: #888a8c;
+              a{
+                color: #ffffff !important;
+              }
+            }
+      }
 }
