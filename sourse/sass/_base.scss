@@ -20,12 +20,14 @@ html {
 
 body,
 html {
+	
 	// min-height: 10000px;
 	font-size: $em-base;
 	// @include font-size(1rem);
 }
  
 body {
+	overflow-x:hidden;
 	min-width: 320px;
 	position: relative;
 
