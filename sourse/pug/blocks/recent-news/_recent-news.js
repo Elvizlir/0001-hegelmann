@@ -1,0 +1,5 @@
+JSCCommonrecent-news();
+	recent-news() {
+
+	}
+	

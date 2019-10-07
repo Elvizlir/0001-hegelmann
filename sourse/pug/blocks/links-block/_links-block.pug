@@ -1,0 +1,21 @@
+mixin links-block()
+	// start links-block
+	+b.SECTION.links-block.section#links-block&attributes(attributes)
+		.container
+			mixin links-i(t)
+				+e.A.link(href='#')=t
+			+e.block
+				+links-i('Express')
+				+links-i('Hazardous Goods')
+				+links-i('Auto & Car Transport')
+				+links-i('Automotive')
+				+links-i('High Value')
+				+links-i('Health Care')
+				+links-i('Food')
+			+e.block
+				+links-i('Waste and special transport')
+				+links-i('Container Logistic')
+				+links-i('Storage services')
+				+links-i('Tickets for freight transport')
+				+links-i('HT RFS Solutions')
+	// end links-block

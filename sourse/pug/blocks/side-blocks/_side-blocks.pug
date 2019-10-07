@@ -1,0 +1,30 @@
+mixin side-blocks(n)
+	// start side-blocks
+	+b.SECTION.side-blocks.section#side-blocks&attributes(attributes)
+		if n == 'about'
+			+b.side-about
+				+e.title We are here for you
+				+e.text Lorem ipsum dolor sit amet, ad&nbsp;vim adversarium instructior, vix no&nbsp;dicunt alterum. Ei&nbsp;nec fabellas expetenda. Eam ignota scripserit accommodare&nbsp;no, at&nbsp;usu labitur epicuri. Unum partiendo maluisset at&nbsp;nec, cu&nbsp;magna inimicus pri. Eu&nbsp;case electram postulant eos, in&nbsp;dicant postea qui, mei sumo vocent voluptua&nbsp;et.
+		if n == 'form'
+			+b.side-form
+				+e.title Contact us for more information
+				+form-wrap
+					+input('Name*')
+					+input('E-mail*')
+					+input('Your message*','textarea')
+					+e.btn.btn.btn-primary(type='submit') SUBMIT
+				+e.contacts
+					+e.contacts-title Vardas Pavardė
+					+e.contacts-mail
+						a(href='mailto:vardaspavarde@hegelmann.com') vardaspavarde@hegelmann.com
+					+e.contacts-phone
+						a(href='tel:+3700000000') +370 00 000 00
+		if n == 'mcontacts'
+			+b.side-form
+				+e.contacts
+					+e.subtitle Media contact:
+					+e.contacts-title AGNE AMBRAZEVICIENE
+					+e.text Head of Marketing Department
+					+e.contacts-phone
+						a(href='tel:+37037788658') +37037788658
+	// end side-blocks

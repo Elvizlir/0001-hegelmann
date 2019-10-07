@@ -1,0 +1,5 @@
+JSCCommons-newsroom();
+	s-newsroom() {
+
+	}
+	

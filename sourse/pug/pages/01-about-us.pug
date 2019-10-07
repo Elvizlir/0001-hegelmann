@@ -8,7 +8,8 @@ block title
 
 include ../blocks/s-content/_s-content.pug
 include ../blocks/s-contact/_s-contact.pug
-include ../blocks/s-map/_s-map.pug
+include ../blocks/s-about-us/_s-about-us.pug
+include ../blocks/side-blocks/_side-blocks.pug
 
 block pagecontent
  
@@ -17,9 +18,16 @@ block pagecontent
 		+top-line()
 		+top-nav()
 	+header-block()
-		+pic("2-layers",'','',0)(class='header-img')
+		+pic("about-us",'','',0)(class='header-img')
 	//- +s-form()
-	+s-map
+	.main-page-wrap
+		.container
+			.row
+				.col-lg
+					+s-about-us
+				.col-lg.side-col.order-lg-first
+					+side-blocks('about')
+	
 	//- +s-contact()
 	+footer()
 
