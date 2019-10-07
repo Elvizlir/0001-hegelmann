@@ -33,7 +33,7 @@
 	background-color: #FFFFFF;
 	padding: rem(15) rem(20) rem(15) rem(15);
 	// max-width: rem(400);
-	&__title{
+	h3{
 		color: $secondary;
 		text-transform: uppercase;
 		font-weight: 900;
@@ -41,7 +41,7 @@
 		letter-spacing: 1.2px;
 		margin-bottom: rem(20);
 	}
-	&__text{
+	p{
 		font-weight: 600;
 		@include rfs(24);
 		line-height: 1.3;

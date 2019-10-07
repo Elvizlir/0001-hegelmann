@@ -504,7 +504,7 @@ a{
 	@extend .mono;
 }
 
-.main-section-title{
+h1{
 	font-weight: 900;
 	@include rfs(48);
 	letter-spacing: 2.4px;
@@ -512,7 +512,18 @@ a{
 	color: $primary-dark;
 }
 
-.main-section-text{
+h2{
+		color: $primary;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: rem(36);
+		letter-spacing: 1.8px;
+		border-bottom: 3px solid $primary-dark;
+		margin-bottom: rem(10);
+		padding-bottom: rem(5);
+}
+
+p{
 	font-weight: 600;
 	letter-spacing: 1.2px;
 	color: #000000;
