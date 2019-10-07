@@ -1,0 +1,35 @@
+extends layout/main.pug
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about-us/_s-about-us.pug
+include ../blocks/s-fleet/_s-fleet.pug
+include ../blocks/s-map/_s-map.pug
+include ../blocks/side-blocks/_side-blocks.pug
+
+block pagecontent
+ 
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+	+header-block()
+		+pic("map-head",'','',0)(class='header-img')
+	//- +s-form()
+	.contacts-wrapper
+		+s-map-2
+		.main-page-wrap
+			.container
+				.row
+					.col-lg.side-col.order-lg-first
+						+side-blocks('c-form')
+	
+	//- +s-contact()
+	+footer()
+
