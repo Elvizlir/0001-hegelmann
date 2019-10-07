@@ -18,7 +18,10 @@
 		text-transform: uppercase;
 		font-weight: 600;
 		letter-spacing: 0.9px;
-		font-size: rem(18);
+		@include media-breakpoint-up(lg){
+			font-size: rem(18);
+		}
+		font-size: rem(14);
 		display: inline-block;
 		&:not(:last-child){
 			margin-right: rem(35);

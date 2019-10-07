@@ -7,7 +7,7 @@
 		margin: 0;
 	}
 	a{
-		font-size: rem(48);
+		@include rfs(48);
 		color: $primary-dark;
 		font-weight: 900;
 		letter-spacing: 2.4px;
