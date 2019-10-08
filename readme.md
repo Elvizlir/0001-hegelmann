@@ -5,4 +5,4 @@
  <a href='https://elvizlir.github.io/0001-hegelmann/public/05-fleet.html'> 05. https://elvizlir.github.io/0001-hegelmann/public/05-fleet.html </a><br><br>
  <a href='https://elvizlir.github.io/0001-hegelmann/public/06-contacts.html'> 06. https://elvizlir.github.io/0001-hegelmann/public/06-contacts.html </a><br><br>
  <a href='https://elvizlir.github.io/0001-hegelmann/public/07-service.html'> 07. https://elvizlir.github.io/0001-hegelmann/public/07-service.html </a><br><br>
- <a href='https://elvizlir.github.io/0001-hegelmann/public/08-catalog.html'> 08. https://elvizlir.github.io/0001-hegelmann/public/07-service.html </a><br><br>
+ <a href='https://elvizlir.github.io/0001-hegelmann/public/08-catalog.html'> 08. https://elvizlir.github.io/0001-hegelmann/public/08-catalog.html </a><br><br>
