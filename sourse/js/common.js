@@ -2,7 +2,7 @@ const $ = jQuery;
 const btnToggle = $(".toggle-menu-mobile--js"),
 	menu = $(".menu-mobile--js")
 
-function 	eventHandler() {
+function eventHandler() {
 	// полифил для object-fit
 	objectFitImages();
 	// Picture element HTML5 shiv
@@ -43,7 +43,7 @@ function 	eventHandler() {
 
 	function heightses() {
 
- 
+
 		// конец добавил
 		if (window.matchMedia("(min-width: 1200px)").matches) {
 
@@ -67,17 +67,141 @@ function 	eventHandler() {
 	// 	const destination = $(elementClick).offset().top;
 
 	// 	$('html, body').animate({ scrollTop: destination }, 1100);
-
 	// 	return false;
 	// });
- 
-	};
-	// /form
-	if (document.readyState !== 'loading') {
-		eventHandler();
-	} else {
-		document.addEventListener('DOMContentLoaded', eventHandler);
-	}
+
+	var chart1 = new Chart(document.getElementById('chart1').getContext('2d'), {
+		// The type of chart we want to create
+		type: 'doughnut',
+
+		// The data for our dataset
+		data: {
+			labels: ["", ""],
+			datasets: [{
+				// labels: ['1', '2'],
+				backgroundColor: ["#3e95cd", "#EDEDEE", "#EDEDEE"],
+				borderColor: ["#ffffff"],
+				data: [35.9, 30.8, 33.5]
+			}]
+		},
+
+		// Configuration options go here
+		options: {
+			responsive: true,
+			cutoutPercentage: 70,
+			tooltips: {enabled: false},
+			hover: {mode: null},
+			maintainAspectRatio: false,
+			scaleShowLabels: false,
+			legend: {
+				display: false
+			},
+			tooltips: {
+				enabled: false
+			}
+		},
+	});
+	var chart2 = new Chart(document.getElementById('chart2').getContext('2d'), {
+		// The type of chart we want to create
+		type: 'doughnut',
+
+		// The data for our dataset
+		data: {
+			labels: ["", ""],
+			datasets: [{
+				// labels: ['1', '2'],
+				backgroundColor: ["#EDEDEE", "#51BCF7", "#EDEDEE"],
+				borderColor: ["#ffffff"],
+				data: [35.9, 30.8, 33.5]
+			}]
+		},
+
+		// Configuration options go here
+		options: {
+			responsive: true,
+			cutoutPercentage: 70,
+			tooltips: {enabled: false},
+			hover: {mode: null},
+			maintainAspectRatio: false,
+			scaleShowLabels: false,
+			legend: {
+				display: false
+			},
+			tooltips: {
+				enabled: false
+			}
+		},
+	});
+	var chart3 = new Chart(document.getElementById('chart3').getContext('2d'), {
+		// The type of chart we want to create
+		type: 'doughnut',
+
+		// The data for our dataset
+		data: {
+			labels: ["", ""],
+			datasets: [{
+				// labels: ['1', '2'],
+				backgroundColor: ["#EDEDEE", "#EDEDEE", "#95D1FA"],
+				borderColor: ["#ffffff"],
+				data: [35.9, 30.8, 33.5]
+			}]
+		},
+
+		// Configuration options go here
+		options: {
+			cutoutPercentage: 70,
+			responsive: true,
+			tooltips: {enabled: false},
+			hover: {mode: null},
+			maintainAspectRatio: false,
+			scaleShowLabels: false,
+			legend: {
+				display: false
+			},
+			tooltips: {
+				enabled: false
+			}
+		},
+	});
+	var chart4 = new Chart(document.getElementById('chart4').getContext('2d'), {
+		// The type of chart we want to create
+		type: 'doughnut',
+
+		// The data for our dataset
+		data: {
+			labels: ["", ""],
+			datasets: [{
+				// labels: ['1', '2'],
+				backgroundColor: ["#3e95cd", "#51BCF7", "#95D1FA"],
+				borderColor: ["#ffffff"],
+				data: [35.9, 30.8, 33.5]
+			}]
+		},
+
+		// Configuration options go here
+		options: {
+			cutoutPercentage: 70,
+			responsive: true,
+			tooltips: {enabled: false},
+			hover: {mode: null},
+			maintainAspectRatio: false,
+			scaleShowLabels: false,
+			legend: {
+				display: false
+			},
+			tooltips: {
+				enabled: false
+			}
+		},
+	});
+
+};
+// /form
+if (document.readyState !== 'loading') {
+	eventHandler();
+} else {
+	document.addEventListener('DOMContentLoaded', eventHandler);
+}
 const JSCCommon = {
 	// часть вызов скриптов здесь, для использования при AJAX
 	// функции для запуска lazy
@@ -86,7 +210,7 @@ const JSCCommon = {
 	// /LazyFunction
 
 	modalCall() {
-	 
+
 		$(".link-modal").fancybox({
 			arrows: false,
 			infobar: false,
@@ -122,15 +246,15 @@ const JSCCommon = {
 				$("body, html").removeClass("fixed");
 			}
 		});
-		  
-		$(".menu-mobile__inner-wrapper .menu-item-has-children ").each(function(){
-      $(this).append('<div class="toggle-l"></div>');
-    })
 
-    $( '.menu-mobile__inner-wrapper .menu-item-has-children').on('click', '.toggle-l', function(){
-        $(this).prev().slideToggle()
-        return false;
-      }) 
+		$(".menu-mobile__inner-wrapper .menu-item-has-children ").each(function () {
+			$(this).append('<div class="toggle-l"></div>');
+		})
+
+		$('.menu-mobile__inner-wrapper .menu-item-has-children').on('click', '.toggle-l', function () {
+			$(this).prev().slideToggle()
+			return false;
+		})
 	},
 	// /mobileMenu
 
@@ -165,7 +289,9 @@ const JSCCommon = {
 	}
 	// /inputMask
 
+
 };
- 
+
+
 // JSCCommon.LazyFunction();
 /***/

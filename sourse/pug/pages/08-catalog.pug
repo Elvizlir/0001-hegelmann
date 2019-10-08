@@ -9,6 +9,8 @@ block title
 include ../blocks/s-content/_s-content.pug
 include ../blocks/s-contact/_s-contact.pug
 include ../blocks/s-financial/_s-financial.pug
+include ../blocks/s-catalog/_s-catalog.pug
+include ../blocks/links-block/_links-block.pug
 include ../blocks/side-blocks/_side-blocks.pug
 
 block pagecontent
@@ -17,16 +19,12 @@ block pagecontent
 	+header()
 		+top-line()
 		+top-nav()
-	+header-block()
-		+pic("financial",'','',0)(class='header-img')
-	//- +s-form()
-	.main-page-wrap
-		.container
-			.row
-				.col-lg
-					+s-financial
-				.col-lg.side-col.order-lg-first
-					+side-blocks('diag')
-	//- +s-contact()
+	+links-block
+	.catalog-page
+		.main-page-wrap
+			.container
+				.row
+					.col-lg.offset-lg-3
+						+s-catalog
 	+footer()
 

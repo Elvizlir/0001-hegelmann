@@ -57,4 +57,29 @@ mixin side-blocks(n)
 					+e.text Head of Marketing Department
 					+e.contacts-phone
 						a(href='tel:+37037788658') +37037788658
+		if n == 'diag'
+			+b.diag
+				+e.block
+					+e.block-item
+						+e.title-wrap
+							+e.block-title Lorem ipsum 1
+							+e.count 35.9%
+						+e.diag-wrapper
+							<canvas id="chart1" width="100px" height="100px"></canvas>
+					+e.block-item
+						+e.title-wrap
+							+e.block-title Lorem ipsum 1
+							+e.count 35.9%
+						+e.diag-wrapper
+							<canvas id="chart2" width="100px" height="100px"></canvas>
+					+e.block-item
+						+e.title-wrap
+							+e.block-title Lorem ipsum 1
+							+e.count 35.9%
+						+e.diag-wrapper
+							<canvas id="chart3" width="100px" height="100px"></canvas>
+				+e.bot-block
+					+e.main-diag-wrapper
+						<canvas id="chart4" width="325px" height="325px"></canvas>
+					+e.text Lorem ipsum dolor sit amet, ad vim adversarium instructior, vix no dicunt alterum. 
 	// end side-blocks

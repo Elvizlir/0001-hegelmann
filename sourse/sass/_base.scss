@@ -495,7 +495,14 @@ a{
 	text-align: right;
 	border-bottom: 5px solid #fff;
 }
-
+.catalog-page{
+	z-index: 0;
+	position: relative;
+	.main-page-wrap{
+		position: relative;
+		z-index: 0;
+	}
+}
 .main-page-wrap{
 	.container{
 		position: relative;

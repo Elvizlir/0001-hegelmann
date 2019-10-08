@@ -1,0 +1,15 @@
+mixin s-catalog()
+	// start s-catalog
+	+b.s-catalog.section#s-catalog&attributes(attributes)
+		h1 What we can do for you
+		.row
+			mixin cat-i(i, t)
+				.col-4
+					+e.A.item(href='#')
+						+e.item-title=t
+						+e.img-wrap
+							+e.IMG.img(src=`` alt='')
+			+cat-i('','Title')
+			+cat-i('','Title')
+			+cat-i('','Title')
+	// end s-catalog
