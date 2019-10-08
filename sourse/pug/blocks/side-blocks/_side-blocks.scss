@@ -177,7 +177,9 @@
 	&__diag-wrapper{
 		border-radius: 50%;
 		overflow: hidden;
-		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+		@include media-breakpoint-up(sm){
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+		}
 		max-width: rem(100);
 	}
 	&__block-title{
@@ -185,12 +187,15 @@
 		font-style: italic;
 		letter-spacing: 1.2px;
 		font-weight: 700;
-		font-size: rem(24);
+		@include rfs(24);
+		@include media-breakpoint-down(xs){
+			font-size: rem(18);
+		}
 		color: $secondary;
 	}
 	&__count{
 		color: $primary;
-		font-size: rem(64);
+		@include rfs(64);
 		font-weight: 700;
 		font-style: italic;
 		text-transform: uppercase;
@@ -205,13 +210,16 @@
 	&__main-diag-wrapper{
 		border-radius: 50%;
 		overflow: hidden;
-		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+		@include media-breakpoint-up(sm){
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+		}
 		max-width: rem(325);
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: rem(20);
 		position: relative;
 		&::after{
+			text-align: center;
 			content: 'Lorem ipsum';
 			@include a-cent;
 			color: $secondary;

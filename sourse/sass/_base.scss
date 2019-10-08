@@ -498,6 +498,14 @@ a{
 .catalog-page{
 	z-index: 0;
 	position: relative;
+	.links-block__block{
+		@include media-breakpoint-up(xl){
+			max-width: unset;
+			padding-left: rem(300) !important;
+			margin-right: rem(100);
+			margin-left: rem(50);
+		}
+	}
 	.main-page-wrap{
 		position: relative;
 		z-index: 0;
