@@ -11,7 +11,7 @@ html {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	background-position: center -412px;
+	background-position: center 0;
 	opacity: 0;
 	// opacity: 0.7;
 } 
@@ -495,7 +495,7 @@ a{
 	text-align: right;
 	border-bottom: 5px solid #fff;
 }
-.catalog-page{
+.noside-page{
 	z-index: 0;
 	position: relative;
 	.links-block__block{
@@ -507,8 +507,26 @@ a{
 		}
 	}
 	.main-page-wrap{
+		max-width: 1080px;
+		margin: 0 auto;
 		position: relative;
 		z-index: 0;
+	}
+}
+
+.noside-catalog{
+	.main-page-wrap{
+		@include media-breakpoint-up(xl){
+			margin-right: rem(70);
+			max-width: rem(900);
+		}
+		@include media-breakpoint-up(xxl){
+			margin-right: auto;
+			max-width: 1080px;
+		}
+		// @media screen and (min-width: 1601){
+		// 	margin-right: auto !important;
+		// }
 	}
 }
 .main-page-wrap{

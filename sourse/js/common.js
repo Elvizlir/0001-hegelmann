@@ -19,7 +19,7 @@ function eventHandler() {
 
 	// JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/home.png);"></div>')
+	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/internetinesvetaine-02-servicespsd.png);"></div>')
 	// /добавляет подложку для pixel perfect
 
 
@@ -69,131 +69,139 @@ function eventHandler() {
 	// 	$('html, body').animate({ scrollTop: destination }, 1100);
 	// 	return false;
 	// });
-
-	var chart1 = new Chart(document.getElementById('chart1').getContext('2d'), {
-		// The type of chart we want to create
-		type: 'doughnut',
-
-		// The data for our dataset
-		data: {
-			labels: ["", ""],
-			datasets: [{
-				// labels: ['1', '2'],
-				backgroundColor: ["#3e95cd", "#EDEDEE", "#EDEDEE"],
-				borderColor: ["#ffffff"],
-				data: [35.9, 30.8, 33.5]
-			}]
-		},
-
-		// Configuration options go here
-		options: {
-			responsive: true,
-			cutoutPercentage: 70,
-			tooltips: {enabled: false},
-			hover: {mode: null},
-			maintainAspectRatio: false,
-			scaleShowLabels: false,
-			legend: {
-				display: false
+	if($('div').is('#chart1')){
+		var chart1 = new Chart(document.getElementById('chart1').getContext('2d'), {
+			// The type of chart we want to create
+			type: 'doughnut',
+	
+			// The data for our dataset
+			data: {
+				labels: ["", ""],
+				datasets: [{
+					// labels: ['1', '2'],
+					backgroundColor: ["#3e95cd", "#EDEDEE", "#EDEDEE"],
+					borderColor: ["#ffffff"],
+					data: [35.9, 30.8, 33.5]
+				}]
 			},
-			tooltips: {
-				enabled: false
-			}
-		},
-	});
-	var chart2 = new Chart(document.getElementById('chart2').getContext('2d'), {
-		// The type of chart we want to create
-		type: 'doughnut',
-
-		// The data for our dataset
-		data: {
-			labels: ["", ""],
-			datasets: [{
-				// labels: ['1', '2'],
-				backgroundColor: ["#EDEDEE", "#51BCF7", "#EDEDEE"],
-				borderColor: ["#ffffff"],
-				data: [35.9, 30.8, 33.5]
-			}]
-		},
-
-		// Configuration options go here
-		options: {
-			responsive: true,
-			cutoutPercentage: 70,
-			tooltips: {enabled: false},
-			hover: {mode: null},
-			maintainAspectRatio: false,
-			scaleShowLabels: false,
-			legend: {
-				display: false
+	
+			// Configuration options go here
+			options: {
+				responsive: true,
+				cutoutPercentage: 70,
+				tooltips: {enabled: false},
+				hover: {mode: null},
+				maintainAspectRatio: false,
+				scaleShowLabels: false,
+				legend: {
+					display: false
+				},
+				tooltips: {
+					enabled: false
+				}
 			},
-			tooltips: {
-				enabled: false
-			}
-		},
-	});
-	var chart3 = new Chart(document.getElementById('chart3').getContext('2d'), {
-		// The type of chart we want to create
-		type: 'doughnut',
+		});
+	}
 
-		// The data for our dataset
-		data: {
-			labels: ["", ""],
-			datasets: [{
-				// labels: ['1', '2'],
-				backgroundColor: ["#EDEDEE", "#EDEDEE", "#95D1FA"],
-				borderColor: ["#ffffff"],
-				data: [35.9, 30.8, 33.5]
-			}]
-		},
-
-		// Configuration options go here
-		options: {
-			cutoutPercentage: 70,
-			responsive: true,
-			tooltips: {enabled: false},
-			hover: {mode: null},
-			maintainAspectRatio: false,
-			scaleShowLabels: false,
-			legend: {
-				display: false
+	if($('div').is('#chart2')){
+		var chart2 = new Chart(document.getElementById('chart2').getContext('2d'), {
+			// The type of chart we want to create
+			type: 'doughnut',
+	
+			// The data for our dataset
+			data: {
+				labels: ["", ""],
+				datasets: [{
+					// labels: ['1', '2'],
+					backgroundColor: ["#EDEDEE", "#51BCF7", "#EDEDEE"],
+					borderColor: ["#ffffff"],
+					data: [35.9, 30.8, 33.5]
+				}]
 			},
-			tooltips: {
-				enabled: false
-			}
-		},
-	});
-	var chart4 = new Chart(document.getElementById('chart4').getContext('2d'), {
-		// The type of chart we want to create
-		type: 'doughnut',
-
-		// The data for our dataset
-		data: {
-			labels: ["", ""],
-			datasets: [{
-				// labels: ['1', '2'],
-				backgroundColor: ["#3e95cd", "#51BCF7", "#95D1FA"],
-				borderColor: ["#ffffff"],
-				data: [35.9, 30.8, 33.5]
-			}]
-		},
-
-		// Configuration options go here
-		options: {
-			cutoutPercentage: 70,
-			responsive: true,
-			tooltips: {enabled: false},
-			hover: {mode: null},
-			maintainAspectRatio: false,
-			scaleShowLabels: false,
-			legend: {
-				display: false
+	
+			// Configuration options go here
+			options: {
+				responsive: true,
+				cutoutPercentage: 70,
+				tooltips: {enabled: false},
+				hover: {mode: null},
+				maintainAspectRatio: false,
+				scaleShowLabels: false,
+				legend: {
+					display: false
+				},
+				tooltips: {
+					enabled: false
+				}
 			},
-			tooltips: {
-				enabled: false
-			}
-		},
-	});
+		});
+	}
+	if($('div').is('#chart3')){
+		var chart3 = new Chart(document.getElementById('chart3').getContext('2d'), {
+			// The type of chart we want to create
+			type: 'doughnut',
+	
+			// The data for our dataset
+			data: {
+				labels: ["", ""],
+				datasets: [{
+					// labels: ['1', '2'],
+					backgroundColor: ["#EDEDEE", "#EDEDEE", "#95D1FA"],
+					borderColor: ["#ffffff"],
+					data: [35.9, 30.8, 33.5]
+				}]
+			},
+	
+			// Configuration options go here
+			options: {
+				cutoutPercentage: 70,
+				responsive: true,
+				tooltips: {enabled: false},
+				hover: {mode: null},
+				maintainAspectRatio: false,
+				scaleShowLabels: false,
+				legend: {
+					display: false
+				},
+				tooltips: {
+					enabled: false
+				}
+			},
+		});
+	}
+	if($('div').is('#chart4')){
+		var chart4 = new Chart(document.getElementById('chart4').getContext('2d'), {
+			// The type of chart we want to create
+			type: 'doughnut',
+	
+			// The data for our dataset
+			data: {
+				labels: ["", ""],
+				datasets: [{
+					// labels: ['1', '2'],
+					backgroundColor: ["#3e95cd", "#51BCF7", "#95D1FA"],
+					borderColor: ["#ffffff"],
+					data: [35.9, 30.8, 33.5]
+				}]
+			},
+	
+			// Configuration options go here
+			options: {
+				cutoutPercentage: 70,
+				responsive: true,
+				tooltips: {enabled: false},
+				hover: {mode: null},
+				maintainAspectRatio: false,
+				scaleShowLabels: false,
+				legend: {
+					display: false
+				},
+				tooltips: {
+					enabled: false
+				}
+			},
+		});
+	}
 
 };
 // /form

@@ -15,16 +15,28 @@ include ../blocks/side-blocks/_side-blocks.pug
 include ../blocks/catalog-circle/_catalog-circle.pug
 
 block pagecontent
-
+ 
+	//- +mob-mnu()
+	//- +header()
+	//- 	+top-line()
+	//- 	+top-nav()
+	//- .catalog-page
+	//- 	+links-block
+	//- 	.main-page-wrap
+	//- 		.container
+	//- 			.row
+	//- 				.col-xl.offset-xl-3
+	//- 					+s-catalog
+	//- +footer()
 
 	+mob-mnu()
 	+header()
 		+top-line()
 		+top-nav()
-	.noside-page.noside-catalog
+	.noside-page
 		+links-block
 		.main-page-wrap
 			.container
-				+s-catalog
+				+catalog-circle
 	+footer()
 

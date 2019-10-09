@@ -19,7 +19,7 @@ function eventHandler() {
   JSCCommon.inputMask(); // JSCCommon.CustomInputFile();
   // добавляет подложку для pixel perfect
 
-  $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/home.png);"></div>'); // /добавляет подложку для pixel perfect
+  $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/internetinesvetaine-02-servicespsd.png);"></div>'); // /добавляет подложку для pixel perfect
   // const url = document.location.href;
   // $.each($(".top-nav__nav a "), function () {
   // 	if (this.href == url) {
@@ -54,134 +54,145 @@ function eventHandler() {
   // 	return false;
   // });
 
-  var chart1 = new Chart(document.getElementById('chart1').getContext('2d'), {
-    // The type of chart we want to create
-    type: 'doughnut',
-    // The data for our dataset
-    data: {
-      labels: ["", ""],
-      datasets: [{
-        // labels: ['1', '2'],
-        backgroundColor: ["#3e95cd", "#EDEDEE", "#EDEDEE"],
-        borderColor: ["#ffffff"],
-        data: [35.9, 30.8, 33.5]
-      }]
-    },
-    // Configuration options go here
-    options: _defineProperty({
-      responsive: true,
-      cutoutPercentage: 70,
-      tooltips: {
+  if ($('div').is('#chart1')) {
+    var chart1 = new Chart(document.getElementById('chart1').getContext('2d'), {
+      // The type of chart we want to create
+      type: 'doughnut',
+      // The data for our dataset
+      data: {
+        labels: ["", ""],
+        datasets: [{
+          // labels: ['1', '2'],
+          backgroundColor: ["#3e95cd", "#EDEDEE", "#EDEDEE"],
+          borderColor: ["#ffffff"],
+          data: [35.9, 30.8, 33.5]
+        }]
+      },
+      // Configuration options go here
+      options: _defineProperty({
+        responsive: true,
+        cutoutPercentage: 70,
+        tooltips: {
+          enabled: false
+        },
+        hover: {
+          mode: null
+        },
+        maintainAspectRatio: false,
+        scaleShowLabels: false,
+        legend: {
+          display: false
+        }
+      }, "tooltips", {
         enabled: false
+      })
+    });
+  }
+
+  if ($('div').is('#chart2')) {
+    var chart2 = new Chart(document.getElementById('chart2').getContext('2d'), {
+      // The type of chart we want to create
+      type: 'doughnut',
+      // The data for our dataset
+      data: {
+        labels: ["", ""],
+        datasets: [{
+          // labels: ['1', '2'],
+          backgroundColor: ["#EDEDEE", "#51BCF7", "#EDEDEE"],
+          borderColor: ["#ffffff"],
+          data: [35.9, 30.8, 33.5]
+        }]
       },
-      hover: {
-        mode: null
-      },
-      maintainAspectRatio: false,
-      scaleShowLabels: false,
-      legend: {
-        display: false
-      }
-    }, "tooltips", {
-      enabled: false
-    })
-  });
-  var chart2 = new Chart(document.getElementById('chart2').getContext('2d'), {
-    // The type of chart we want to create
-    type: 'doughnut',
-    // The data for our dataset
-    data: {
-      labels: ["", ""],
-      datasets: [{
-        // labels: ['1', '2'],
-        backgroundColor: ["#EDEDEE", "#51BCF7", "#EDEDEE"],
-        borderColor: ["#ffffff"],
-        data: [35.9, 30.8, 33.5]
-      }]
-    },
-    // Configuration options go here
-    options: _defineProperty({
-      responsive: true,
-      cutoutPercentage: 70,
-      tooltips: {
+      // Configuration options go here
+      options: _defineProperty({
+        responsive: true,
+        cutoutPercentage: 70,
+        tooltips: {
+          enabled: false
+        },
+        hover: {
+          mode: null
+        },
+        maintainAspectRatio: false,
+        scaleShowLabels: false,
+        legend: {
+          display: false
+        }
+      }, "tooltips", {
         enabled: false
+      })
+    });
+  }
+
+  if ($('div').is('#chart3')) {
+    var chart3 = new Chart(document.getElementById('chart3').getContext('2d'), {
+      // The type of chart we want to create
+      type: 'doughnut',
+      // The data for our dataset
+      data: {
+        labels: ["", ""],
+        datasets: [{
+          // labels: ['1', '2'],
+          backgroundColor: ["#EDEDEE", "#EDEDEE", "#95D1FA"],
+          borderColor: ["#ffffff"],
+          data: [35.9, 30.8, 33.5]
+        }]
       },
-      hover: {
-        mode: null
-      },
-      maintainAspectRatio: false,
-      scaleShowLabels: false,
-      legend: {
-        display: false
-      }
-    }, "tooltips", {
-      enabled: false
-    })
-  });
-  var chart3 = new Chart(document.getElementById('chart3').getContext('2d'), {
-    // The type of chart we want to create
-    type: 'doughnut',
-    // The data for our dataset
-    data: {
-      labels: ["", ""],
-      datasets: [{
-        // labels: ['1', '2'],
-        backgroundColor: ["#EDEDEE", "#EDEDEE", "#95D1FA"],
-        borderColor: ["#ffffff"],
-        data: [35.9, 30.8, 33.5]
-      }]
-    },
-    // Configuration options go here
-    options: _defineProperty({
-      cutoutPercentage: 70,
-      responsive: true,
-      tooltips: {
+      // Configuration options go here
+      options: _defineProperty({
+        cutoutPercentage: 70,
+        responsive: true,
+        tooltips: {
+          enabled: false
+        },
+        hover: {
+          mode: null
+        },
+        maintainAspectRatio: false,
+        scaleShowLabels: false,
+        legend: {
+          display: false
+        }
+      }, "tooltips", {
         enabled: false
+      })
+    });
+  }
+
+  if ($('div').is('#chart4')) {
+    var chart4 = new Chart(document.getElementById('chart4').getContext('2d'), {
+      // The type of chart we want to create
+      type: 'doughnut',
+      // The data for our dataset
+      data: {
+        labels: ["", ""],
+        datasets: [{
+          // labels: ['1', '2'],
+          backgroundColor: ["#3e95cd", "#51BCF7", "#95D1FA"],
+          borderColor: ["#ffffff"],
+          data: [35.9, 30.8, 33.5]
+        }]
       },
-      hover: {
-        mode: null
-      },
-      maintainAspectRatio: false,
-      scaleShowLabels: false,
-      legend: {
-        display: false
-      }
-    }, "tooltips", {
-      enabled: false
-    })
-  });
-  var chart4 = new Chart(document.getElementById('chart4').getContext('2d'), {
-    // The type of chart we want to create
-    type: 'doughnut',
-    // The data for our dataset
-    data: {
-      labels: ["", ""],
-      datasets: [{
-        // labels: ['1', '2'],
-        backgroundColor: ["#3e95cd", "#51BCF7", "#95D1FA"],
-        borderColor: ["#ffffff"],
-        data: [35.9, 30.8, 33.5]
-      }]
-    },
-    // Configuration options go here
-    options: _defineProperty({
-      cutoutPercentage: 70,
-      responsive: true,
-      tooltips: {
+      // Configuration options go here
+      options: _defineProperty({
+        cutoutPercentage: 70,
+        responsive: true,
+        tooltips: {
+          enabled: false
+        },
+        hover: {
+          mode: null
+        },
+        maintainAspectRatio: false,
+        scaleShowLabels: false,
+        legend: {
+          display: false
+        }
+      }, "tooltips", {
         enabled: false
-      },
-      hover: {
-        mode: null
-      },
-      maintainAspectRatio: false,
-      scaleShowLabels: false,
-      legend: {
-        display: false
-      }
-    }, "tooltips", {
-      enabled: false
-    })
-  });
+      })
+    });
+  }
 }
 
 ; // /form
