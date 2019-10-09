@@ -54,7 +54,7 @@ function eventHandler() {
   // 	return false;
   // });
 
-  if ($('div').is('#chart1')) {
+  if ($('#chart1').length) {
     var chart1 = new Chart(document.getElementById('chart1').getContext('2d'), {
       // The type of chart we want to create
       type: 'doughnut',
@@ -89,7 +89,7 @@ function eventHandler() {
     });
   }
 
-  if ($('div').is('#chart2')) {
+  if ($('#chart2').length) {
     var chart2 = new Chart(document.getElementById('chart2').getContext('2d'), {
       // The type of chart we want to create
       type: 'doughnut',
@@ -124,7 +124,7 @@ function eventHandler() {
     });
   }
 
-  if ($('div').is('#chart3')) {
+  if ($('#chart3').length) {
     var chart3 = new Chart(document.getElementById('chart3').getContext('2d'), {
       // The type of chart we want to create
       type: 'doughnut',
@@ -159,7 +159,7 @@ function eventHandler() {
     });
   }
 
-  if ($('div').is('#chart4')) {
+  if ($('#chart4').length) {
     var chart4 = new Chart(document.getElementById('chart4').getContext('2d'), {
       // The type of chart we want to create
       type: 'doughnut',
