@@ -203,10 +203,30 @@ function eventHandler() {
   });
   $('.slider--js-2').slick({
     infinite: true,
-    slidesToShow: 7,
+    slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow: $('.recent-news__gal-btn-prev'),
-    nextArrow: $('.recent-news__gal-btn-next')
+    nextArrow: $('.recent-news__gal-btn-next'),
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 7,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 980,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }]
   });
 }
 

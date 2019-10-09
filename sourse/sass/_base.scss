@@ -22,6 +22,9 @@ body,
 html {
 	
 	// min-height: 10000px;
+	@include media-breakpoint-up(lg){
+		font-size: ($em-base * 0.66);
+	}
 	font-size: $em-base;
 	// @include font-size(1rem);
 }
@@ -486,7 +489,7 @@ a{
 
 .side-col{
 	@include media-breakpoint-up(lg){
-		max-width: rem(430);
+		max-width: 430px;
 		padding-bottom: rem(40);
 	}
 }
@@ -517,8 +520,7 @@ a{
 .noside-catalog{
 	.main-page-wrap{
 		@include media-breakpoint-up(xl){
-			margin-right: rem(70);
-			max-width: rem(900);
+			max-width: rem(1300);
 		}
 		@include media-breakpoint-up(xxl){
 			margin-right: auto;

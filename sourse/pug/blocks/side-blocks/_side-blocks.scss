@@ -180,7 +180,7 @@
 		@include media-breakpoint-up(sm){
 			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 		}
-		max-width: rem(100);
+		max-width: 100px;
 	}
 	&__block-title{
 		text-transform: uppercase;
@@ -213,7 +213,7 @@
 		@include media-breakpoint-up(sm){
 			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 		}
-		max-width: rem(325);
+		max-width: 325px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: rem(20);

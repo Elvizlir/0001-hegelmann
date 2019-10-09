@@ -231,9 +231,9 @@
 		content: '';
 		@include a-cent(y);
 		right: 0;
-		@include triangle(30px, #fff, down);
+		@include triangle(rem(30), #fff, down);
 		@include media-breakpoint-down(sm){
-			border-top: 15px solid $secondary;
+			border-top: rem(15) solid $secondary;
 		} 
 	}
 	cursor: pointer;
