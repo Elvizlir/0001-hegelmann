@@ -166,7 +166,7 @@
 			box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.35);
 			border: none;
 			@include rfs(rem(20));
-			@include media-breakpoint-up(xxxl) {
+			@include media-breakpoint-up(xl) {
 
 				width: em(340);
 			}
