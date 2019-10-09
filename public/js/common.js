@@ -193,6 +193,21 @@ function eventHandler() {
       })
     });
   }
+
+  $('.slider--js').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: $('.recent-news__btn-prev'),
+    nextArrow: $('.recent-news__btn-next')
+  });
+  $('.slider--js-2').slick({
+    infinite: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    prevArrow: $('.recent-news__gal-btn-prev'),
+    nextArrow: $('.recent-news__gal-btn-next')
+  });
 }
 
 ; // /form

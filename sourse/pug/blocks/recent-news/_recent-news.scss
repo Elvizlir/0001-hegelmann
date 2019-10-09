@@ -1,8 +1,15 @@
 .recent-news {
-	padding: rem(10);
-	background-color: #fff;
-	&__wrapper{
+	&__block-wrapper{
+		background-color: #fff;
+		padding: rem(10);
+		margin-bottom: rem(15);
 		
+	}
+	&__slider-wrap{
+		position: relative;
+	}
+	h2{
+		max-width: rem(386);
 	}
 	&__left-col{
 		max-width: rem(415);
@@ -27,7 +34,110 @@
 		}
 		p{
 			font-size: rem(20);
+			margin-bottom: rem(5);
 		}
+	}
+	.news-swiper-btn{
+		width: rem(20);
+		height: rem(20);
+		padding: 0;
+		display: flex;
+		align-items: center;
+		font-weight: bold;
+		font-size: rem(11);
+		justify-content: center;
+		border: 1px solid $secondary;
+		border-radius: 0;
+		position: relative;
+		transform: none;
+		svg{
+			width: rem(10);
+		}
+		&:not(:last-child){
+			margin-right: rem(5);
+		}
+	}
+	.gal-swiper-btn{
+		width: rem(25);
+		height: rem(33);
+		background-color: #000;
+		border: 1px solid $secondary;
+		border-radius: 0;
+		.icon{
+			font-size: rem(11);
+			position: absolute;
+			@include a-cent;
+		}
+		svg{
+			fill: #fff;
+			width: rem(10);
+		}
+	}
+	&__gal-btn-next{
+		right: 0;
+	}
+	&__btn{
+		&-wrap{
+			display: flex;
+		}
+	}
+	&__item{
+		padding: rem(14) 0;
+		border-bottom: 3px solid #D7D6D4;
+		&-img-wrap{
+			margin-right: rem(7);
+		}
+		display: flex;
+		&-date{
+			display: block;
+		}
+		&-date{
+			@extend .mono;
+			font-size: rem(18);
+			color: $secondary;
+			font-weight: 600;
+			line-height: rem(18);
+			margin-bottom: rem(5);
+			padding-left: rem(26);
+			position: relative;
+			&::after{
+				content: '';
+				@include a-cent(y);
+				left: 0;
+				background-image: url(../img/date.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: rem(26);
+				height: rem(23);
+			}
+		}
+		&-title{
+			color: #000000;
+			@extend .mono;
+			@include rfs(26);
+			font-weight: 600;
+			line-height: rem(26);
+			letter-spacing: 1.3px;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.slider--js-2{
+		.slide{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__slider-img-wrap{
+		margin-bottom: auto;
+	}
+	&__gal-item-title{
+		font-weight: 600;
+		font-size: rem(16);
+		letter-spacing: 0.8px;
+		line-height: rem(16);
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

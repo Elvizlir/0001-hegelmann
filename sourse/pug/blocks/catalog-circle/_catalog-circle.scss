@@ -244,6 +244,13 @@
 		box-shadow: 1px 5px 18px rgba(0, 0, 0, 0.11);
 		border-radius: 50%;
 	}
+	&__gal-btn{
+		&-prev{
+			position: absolute;
+			@include a-cent(y);
+			left: 0;
+			}
+	}
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
