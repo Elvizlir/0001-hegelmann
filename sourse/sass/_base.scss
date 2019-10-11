@@ -614,3 +614,19 @@ p{
 		}
 	}
 }
+
+.main-wrapper{
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: rem(100);
+	.footer{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.z-99{
+	z-index: 99;
+}

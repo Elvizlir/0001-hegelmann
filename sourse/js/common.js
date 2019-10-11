@@ -43,7 +43,7 @@ function eventHandler() {
 
 	function heightses() {
 
-
+		$(".main-wrapper").css("paddingBottom",$(".footer").height());
 		// конец добавил
 		if (window.matchMedia("(min-width: 1200px)").matches) {
 
