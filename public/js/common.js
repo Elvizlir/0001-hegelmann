@@ -34,7 +34,8 @@ function eventHandler() {
   // /закрыть/открыть мобильное меню
 
   function heightses() {
-    // конец добавил
+    $(".main-wrapper").css("paddingBottom", $(".footer").height()); // конец добавил
+
     if (window.matchMedia("(min-width: 1200px)").matches) {
       btnToggle.removeClass("on"); // $("body").removeClass("fixed");
 
