@@ -1,0 +1,75 @@
+mixin recent-news()
+	// start recent-news
+	+b.SECTION.recent-news.section#recent-news&attributes(attributes)
+		+e.block-wrapper
+			.row
+				+e.left-col.col-lg
+					h2 recent News
+					.slider--js
+						.slide
+							+e.main-news
+								+pic("news-main",'','',0)(class='main-news-img')
+								+e.main-news-date Date 00, 2019
+								a(href='#')
+									h3 Lorem ipsum dolor sit amet, ad vim adversarium instructior.
+								p Lorem ipsum dolor sit amet, ad&nbsp;vim adversarium instructior, vix no&nbsp;dicunt alterum. Ei&nbsp;nec fabellas expetenda. Eam ignota scripserit accommodare&nbsp;no, at&nbsp;usu labitur epicuri. Unum partiendo maluisset at&nbsp;nec, cu&nbsp;magna inimicus pri.
+						.slide
+							+e.main-news
+								+pic("news-main",'','',0)(class='main-news-img')
+								+e.main-news-date Date 00, 2019
+								a(href='#')
+									h3 Lorem ipsum dolor sit amet, ad vim adversarium instructior.
+								p Lorem ipsum dolor sit amet, ad&nbsp;vim adversarium instructior, vix no&nbsp;dicunt alterum. Ei&nbsp;nec fabellas expetenda. Eam ignota scripserit accommodare&nbsp;no, at&nbsp;usu labitur epicuri. Unum partiendo maluisset at&nbsp;nec, cu&nbsp;magna inimicus pri.
+					+e.btn-wrap
+						+e.btn-prev.btn.news-swiper-btn 
+							+icon('back')
+						+e.btn-next.btn.news-swiper-btn 
+							+icon('next')
+				.col
+					.row
+						mixin rec-i(i)
+							.col-xl-6
+								+e.A.item(href='#')
+									+e.item-img-wrap
+										+e.IMG.item-img(src=`img/rec-i${i}.jpg` alt='')
+									+e.item-text-wrap
+										+e.item-date Date 00, 2019
+										+e.item-title Lorem ipsum dolor sit amet, ad vim adversarium instructior.
+						+rec-i('1')
+						+rec-i('1')
+						+rec-i('2')
+						+rec-i('2')
+						+rec-i('3')
+						+rec-i('3')
+						+rec-i('4')
+						+rec-i('4')
+						+rec-i('5')
+						+rec-i('5')
+		+e.block-wrapper
+			h2 photo gallery
+			+e.slider-wrap
+				.slider--js-2
+					mixin rec-slide(i)
+						.slide
+							+e.slider-img-wrap(href=`img/slider${i}.jpg` data-fancybox data-caption="Caption for single image")
+								img.res-i(src=`img/slider${i}.jpg` alt='')
+							+e.gal-item-title Lorem ipsum dolor sit amet, ad vim adversarium instructior.
+					+rec-slide('1')
+					+rec-slide('2')
+					+rec-slide('3')
+					+rec-slide('4')
+					+rec-slide('5')
+					+rec-slide('6')
+					+rec-slide('7')
+					+rec-slide('1')
+					+rec-slide('2')
+					+rec-slide('3')
+					+rec-slide('4')
+					+rec-slide('5')
+					+rec-slide('6')
+					+rec-slide('7')
+				+e.gal-btn-prev.btn.gal-swiper-btn 
+					+icon('back')
+				+e.gal-btn-next.btn.gal-swiper-btn 
+					+icon('next')
+	// end recent-news

@@ -94,12 +94,13 @@
   // margin-left: rem(-80);
   @include media-breakpoint-up(xl) {
     
-    width: em(465 * 16 / 34 );
+    width: em(480 * 16 / 34 );
     position: absolute;
-    min-height: em(1535 * 16 /34);
+    min-height: em(1600 * 16 /34);
     transform: skewX(-17deg);
     transform-origin: top right;
     display: block;
+    left: rem(-5);
     &::before{
       display: none;
     }
@@ -154,7 +155,7 @@
         @include media-breakpoint-up(xxxl) {
                 
         }
-      padding-left: em(110 * 16 / 34);
+      padding-left: em(75 * 16 / 34);
       
       padding-right: em(20 * 16 / 34);
       transform: skewX(17deg);

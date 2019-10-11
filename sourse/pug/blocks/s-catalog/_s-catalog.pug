@@ -1,0 +1,27 @@
+mixin s-catalog()
+	// start s-catalog
+	+b.s-catalog.section#s-catalog&attributes(attributes)
+		h1 What we can do for you
+		.row
+			mixin cat-i(i, t)
+				+e.col.col-sm-6.col-md-4
+					+e.A.item(href='#')
+						+e.item-title=t
+						+e.item-img-wrap
+							+e.IMG.item-img.res-i(src=`img/item-${i}.png` alt='')
+			+cat-i('1','EXPRESS')
+			+cat-i('2','AUTOMOTIVE')
+			+cat-i('3','adr goods')
+			+cat-i('4','auto transport')
+			+cat-i('5','food')
+			+cat-i('6','high value')
+			+cat-i('7','pharma solutions')
+			+cat-i('8','ecommerce')
+			+cat-i('9','FREIGHT TRANSPORT tickets')
+			+cat-i('10','liquid and dry bulk goods')
+			+cat-i('11','special transports')
+			+cat-i('12','van EXPRESS')
+			+cat-i('13','air transport')
+			+cat-i('14','contaier logistic')
+			+cat-i('15','logistic center')
+	// end s-catalog

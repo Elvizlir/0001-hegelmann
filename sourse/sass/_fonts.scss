@@ -4,4 +4,6 @@
 @include font-face (Prompt, "../fonts/Prompt-Bold", bold, $file-formats: woff2 woff ttf);
 @include font-face (Prompt, "../fonts/Prompt-ExtraLight", 100, $file-formats: woff2 woff ttf);
 @include font-face (Prompt, "../fonts/Prompt-BoldItalic", bold, italic, $file-formats: woff2 woff ttf);
+@include font-face ('Acrobat', "../fonts/Akrobat-Black", 900, italic, $file-formats: woff2 woff ttf);
+@include font-face ('Acrobat', "../fonts/Akrobat-SemiBold", 600, italic, $file-formats: woff2 woff ttf);
  

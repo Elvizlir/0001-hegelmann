@@ -49,6 +49,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         #d6d5d3 !default;
 $dark:          $gray-800 !default;
+$gray:          $gray-800 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -61,13 +62,14 @@ $theme-colors: map-merge(
     // "info":       $info,
     // "warning":    $warning,
     "danger":     $danger,
-    // "light":      $light,
+    "light":      $light,
     // "dark":       $dark
+    "gray":       $gray
   ),
   $theme-colors
 );
 
-$body-bg:                   $white !default;
+$body-bg:                   #EFEFEF !default;
 $body-color:                $gray-900 !default;
 
 // Typography
@@ -76,7 +78,7 @@ $body-color:                $gray-900 !default;
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:     Prompt, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-monospace:      'Acrobat' ,SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $line-height-base:            1.5 !default;
 
 

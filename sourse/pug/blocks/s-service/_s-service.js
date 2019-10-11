@@ -1,0 +1,5 @@
+JSCCommons-service();
+	s-service() {
+
+	}
+	

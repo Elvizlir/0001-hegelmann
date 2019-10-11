@@ -1,0 +1,85 @@
+mixin side-blocks(n)
+	// start side-blocks
+	+b.side-blocks.section&attributes(attributes)
+		if n == 'about'
+			+b.side-about
+				h3 We are here for you
+				p Lorem ipsum dolor sit amet, ad&nbsp;vim adversarium instructior, vix no&nbsp;dicunt alterum. Ei&nbsp;nec fabellas expetenda. Eam ignota scripserit accommodare&nbsp;no, at&nbsp;usu labitur epicuri. Unum partiendo maluisset at&nbsp;nec, cu&nbsp;magna inimicus pri. Eu&nbsp;case electram postulant eos, in&nbsp;dicant postea qui, mei sumo vocent voluptua&nbsp;et.
+		if n == 'data'
+			+b.side-about
+				h3 TECHNICAL DATA
+				p Lorem ipsum dolor sit amet, ad&nbsp;vim adversarium instructior, vix no&nbsp;dicunt alterum. Ei&nbsp;nec fabellas expetenda. Eam ignota scripserit accommodare&nbsp;no, at&nbsp;usu labitur epicuri. Unum partiendo maluisset at&nbsp;nec, cu&nbsp;magna inimicus pri. Eu&nbsp;case electram postulant eos, in&nbsp;dicant postea qui, mei sumo vocent voluptua&nbsp;et.
+		if n == 'extras'
+			+b.side-about.bg-light
+				h3 EXTRAS
+				p Lorem ipsum dolor sit amet, ad&nbsp;vim adversarium instructior, vix no&nbsp;dicunt alterum. Ei&nbsp;nec fabellas expetenda. Eam ignota scripserit accommodare&nbsp;no, at&nbsp;usu labitur epicuri. Unum partiendo maluisset at&nbsp;nec, cu&nbsp;magna inimicus pri. Eu&nbsp;case electram postulant eos, in&nbsp;dicant postea qui, mei sumo vocent voluptua&nbsp;et.
+		if n == 'form'
+			+b.side-form
+				+e.title Contact us for more information
+				+form-wrap
+					+input('Name*')
+					+input('E-mail*')
+					+input('Your message*','textarea')
+					+e.btn.btn.btn-primary(type='submit') SUBMIT
+				+e.contacts
+					+e.contacts-title Vardas Pavardė
+					+e.contacts-mail
+						a(href='mailto:vardaspavarde@hegelmann.com') vardaspavarde@hegelmann.com
+					+e.contacts-phone
+						a(href='tel:+3700000000') +370 00 000 00
+		if n == 'form-simple'
+			+b.side-form
+				+e.title Contact us for more information
+				+form-wrap
+					+input('Name*')
+					+input('E-mail*')
+					+input('Your message*','textarea')
+					+e.btn.btn.btn-primary(type='submit') SUBMIT
+		if n == 'c-form'
+			+b.side-form.c-form
+				+e.title Contact us for more information
+				+form-wrap
+					+input('Name*')
+					+input('E-mail*')
+					+input('Your message*','textarea')
+					+e.btn.btn.btn-primary(type='submit') SUBMIT
+				+e.contacts
+					+e.contacts-title HEGELMANN GROUP
+					+e.adress ADDRESS STREET,
+					+e.adress ADDRESS CITY
+					+e.descr You have questions about our offers or would like to arrange a consultation appointment. Then simply use our free contact service! We are pleased about your inquiry. Your data will not be passed on to third parties
+						
+		if n == 'mcontacts'
+			+b.side-form
+				+e.contacts
+					+e.subtitle Media contact:
+					+e.contacts-title AGNE AMBRAZEVICIENE
+					+e.text Head of Marketing Department
+					+e.contacts-phone
+						a(href='tel:+37037788658') +37037788658
+		if n == 'diag'
+			+b.diag
+				+e.block
+					+e.block-item
+						+e.title-wrap
+							+e.block-title Lorem ipsum 1
+							+e.count 35.9%
+						+e.diag-wrapper
+							<canvas id="chart1" width="100" height="100"></canvas>
+					+e.block-item
+						+e.title-wrap
+							+e.block-title Lorem ipsum 1
+							+e.count 35.9%
+						+e.diag-wrapper
+							<canvas id="chart2" width="100" height="100"></canvas>
+					+e.block-item
+						+e.title-wrap
+							+e.block-title Lorem ipsum 1
+							+e.count 35.9%
+						+e.diag-wrapper
+							<canvas id="chart3" width="100" height="100"></canvas>
+				+e.bot-block
+					+e.main-diag-wrapper
+						<canvas id="chart4" width="325" height="325"></canvas>
+					+e.text Lorem ipsum dolor sit amet, ad vim adversarium instructior, vix no dicunt alterum. 
+	// end side-blocks

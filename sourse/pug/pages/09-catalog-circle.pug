@@ -1,0 +1,42 @@
+extends layout/main.pug
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-financial/_s-financial.pug
+include ../blocks/s-catalog/_s-catalog.pug
+include ../blocks/links-block/_links-block.pug
+include ../blocks/side-blocks/_side-blocks.pug
+include ../blocks/catalog-circle/_catalog-circle.pug
+
+block pagecontent
+ 
+	//- +mob-mnu()
+	//- +header()
+	//- 	+top-line()
+	//- 	+top-nav()
+	//- .catalog-page
+	//- 	+links-block
+	//- 	.main-page-wrap
+	//- 		.container
+	//- 			.row
+	//- 				.col-xl.offset-xl-3
+	//- 					+s-catalog
+	//- +footer()
+
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+	.noside-page
+		+links-block
+		.main-page-wrap
+			.container
+				+catalog-circle
+	+footer()
+

@@ -1,0 +1,28 @@
+mixin catalog-circle()
+	// start catalog-circle
+	+b.SECTION.catalog-circle.section#catalog-circle&attributes(attributes)
+		h1.text-center What we can do for you
+		+e.main-wrapper
+			+pic("circle-bg",'','',0)(class='circle-bg')
+			mixin cat-i(i, t)
+				+e.item-wrapper
+					+e.A.item(href='#')
+						+e.item-img-wrap
+							+e.IMG.item-img(src=`img/item-${i}.png` alt='')
+						+e.item-title=t
+			+cat-i('1','EXPRESS')
+			+cat-i('2','AUTOMOTIVE')
+			+cat-i('3','adr goods')
+			+cat-i('4','auto transport')
+			+cat-i('5','food')
+			+cat-i('6','high value')
+			+cat-i('7','pharma solutions')
+			+cat-i('8','ecommerce')
+			+cat-i('9','FREIGHT TRANSPORT tickets')
+			+cat-i('10','liquid and dry bulk goods')
+			+cat-i('11','special transports')
+			+cat-i('12','van EXPRESS')
+			+cat-i('13','air transport')
+			+cat-i('14','contaier logistic')
+			+cat-i('15','logistic center')
+	// end catalog-circle

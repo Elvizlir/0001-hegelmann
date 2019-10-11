@@ -1,5 +1,7 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var $ = jQuery;
 var btnToggle = $(".toggle-menu-mobile--js"),
     menu = $(".menu-mobile--js");
@@ -17,7 +19,7 @@ function eventHandler() {
   JSCCommon.inputMask(); // JSCCommon.CustomInputFile();
   // добавляет подложку для pixel perfect
 
-  $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/home.png);"></div>'); // /добавляет подложку для pixel perfect
+  $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/internetinesvetaine-02-servicespsd.png);"></div>'); // /добавляет подложку для pixel perfect
   // const url = document.location.href;
   // $.each($(".top-nav__nav a "), function () {
   // 	if (this.href == url) {
@@ -51,6 +53,181 @@ function eventHandler() {
   // 	$('html, body').animate({ scrollTop: destination }, 1100);
   // 	return false;
   // });
+
+  if ($('#chart1').length) {
+    var chart1 = new Chart(document.getElementById('chart1').getContext('2d'), {
+      // The type of chart we want to create
+      type: 'doughnut',
+      // The data for our dataset
+      data: {
+        labels: ["", ""],
+        datasets: [{
+          // labels: ['1', '2'],
+          backgroundColor: ["#3e95cd", "#EDEDEE", "#EDEDEE"],
+          borderColor: ["#ffffff"],
+          data: [35.9, 30.8, 33.5]
+        }]
+      },
+      // Configuration options go here
+      options: _defineProperty({
+        responsive: true,
+        cutoutPercentage: 70,
+        tooltips: {
+          enabled: false
+        },
+        hover: {
+          mode: null
+        },
+        maintainAspectRatio: false,
+        scaleShowLabels: false,
+        legend: {
+          display: false
+        }
+      }, "tooltips", {
+        enabled: false
+      })
+    });
+  }
+
+  if ($('#chart2').length) {
+    var chart2 = new Chart(document.getElementById('chart2').getContext('2d'), {
+      // The type of chart we want to create
+      type: 'doughnut',
+      // The data for our dataset
+      data: {
+        labels: ["", ""],
+        datasets: [{
+          // labels: ['1', '2'],
+          backgroundColor: ["#EDEDEE", "#51BCF7", "#EDEDEE"],
+          borderColor: ["#ffffff"],
+          data: [35.9, 30.8, 33.5]
+        }]
+      },
+      // Configuration options go here
+      options: _defineProperty({
+        responsive: true,
+        cutoutPercentage: 70,
+        tooltips: {
+          enabled: false
+        },
+        hover: {
+          mode: null
+        },
+        maintainAspectRatio: false,
+        scaleShowLabels: false,
+        legend: {
+          display: false
+        }
+      }, "tooltips", {
+        enabled: false
+      })
+    });
+  }
+
+  if ($('#chart3').length) {
+    var chart3 = new Chart(document.getElementById('chart3').getContext('2d'), {
+      // The type of chart we want to create
+      type: 'doughnut',
+      // The data for our dataset
+      data: {
+        labels: ["", ""],
+        datasets: [{
+          // labels: ['1', '2'],
+          backgroundColor: ["#EDEDEE", "#EDEDEE", "#95D1FA"],
+          borderColor: ["#ffffff"],
+          data: [35.9, 30.8, 33.5]
+        }]
+      },
+      // Configuration options go here
+      options: _defineProperty({
+        cutoutPercentage: 70,
+        responsive: true,
+        tooltips: {
+          enabled: false
+        },
+        hover: {
+          mode: null
+        },
+        maintainAspectRatio: false,
+        scaleShowLabels: false,
+        legend: {
+          display: false
+        }
+      }, "tooltips", {
+        enabled: false
+      })
+    });
+  }
+
+  if ($('#chart4').length) {
+    var chart4 = new Chart(document.getElementById('chart4').getContext('2d'), {
+      // The type of chart we want to create
+      type: 'doughnut',
+      // The data for our dataset
+      data: {
+        labels: ["", ""],
+        datasets: [{
+          // labels: ['1', '2'],
+          backgroundColor: ["#3e95cd", "#51BCF7", "#95D1FA"],
+          borderColor: ["#ffffff"],
+          data: [35.9, 30.8, 33.5]
+        }]
+      },
+      // Configuration options go here
+      options: _defineProperty({
+        cutoutPercentage: 70,
+        responsive: true,
+        tooltips: {
+          enabled: false
+        },
+        hover: {
+          mode: null
+        },
+        maintainAspectRatio: false,
+        scaleShowLabels: false,
+        legend: {
+          display: false
+        }
+      }, "tooltips", {
+        enabled: false
+      })
+    });
+  }
+
+  $('.slider--js').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: $('.recent-news__btn-prev'),
+    nextArrow: $('.recent-news__btn-next')
+  });
+  $('.slider--js-2').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: $('.recent-news__gal-btn-prev'),
+    nextArrow: $('.recent-news__gal-btn-next'),
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 7,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 980,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }]
+  });
 }
 
 ; // /form

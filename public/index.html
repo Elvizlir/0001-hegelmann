@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="zxx">
   <head>
     <meta charset="utf-8">
     <title>title</title>
@@ -19,6 +19,7 @@
     <meta property="og:image:height" content="504">
     <!-- Custom Browsers Color-->
     <meta name="theme-color" content="#3361d8">
+    <link rel="stylesheet" href="libs/swiper-4.2.0/swiper.min.css">
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.min.css">
@@ -198,7 +199,7 @@
         <div class="top-nav block-with-lazy">
           <div class="container">
             <div class="row">
-              <div class="col-xxxl col-auto d-none d-xl-block">
+              <div class="col-xl col-auto d-none d-xl-block">
                 <div class="top-nav__menu">
                   <ul class="menu">
                     <li class="menu-item"><a href="#">HOME</a></li>
@@ -220,7 +221,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xxxl-auto col">
+              <div class="col-xl-auto col">
                 <div class="form-search">
                   <form>
                     <input type="text"/>
@@ -268,7 +269,7 @@
       <!-- start header-block-->
       <div class="header-block">
         <!-- picture-->
-        <picture> 
+        <picture class="header-img"> 
           <source srcset="img/@2x/webp/2-layers.webp" type="image/webp"/>
           <!-- /webp images  --><img src="img/@2x/2-layers.jpg" alt=""/>
         </picture>
@@ -279,7 +280,7 @@
       <div class="s-map"> 
         <div class="s-map__map-wrap">
           <!-- picture-->
-          <picture> 
+          <picture class="header-img"> 
             <source srcset="img/@2x/webp/map.webp" type="image/webp"/>
             <!-- /webp images  --><img src="img/@2x/map.jpg" alt=""/>
           </picture>
@@ -416,12 +417,14 @@
     <!-- modal libs-->
     <!-- slider libs-->
     <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/swiper-4.2.0/swiper.min.js"></script>
     <!-- /slider libs-->
     <!-- for svg libs-->
     <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
     <!-- /for svg libs-->
     <script src="libs/jquery.touchSwipe.min.js"></script>
     <script src="libs/jquery.inputmask.bundle.min.js"></script>
+    <script src="libs/chart.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

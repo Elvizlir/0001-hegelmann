@@ -1,0 +1,5 @@
+JSCCommonlinks-block();
+	links-block() {
+
+	}
+	

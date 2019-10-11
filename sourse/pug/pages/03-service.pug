@@ -1,0 +1,34 @@
+extends layout/main.pug
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-service/_s-service.pug
+include ../blocks/side-blocks/_side-blocks.pug
+include ../blocks/links-block/_links-block.pug
+
+block pagecontent
+ 
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+	+header-block()
+		+pic("service",'','',0)(class='header-img')
+	//- +s-form()
+	+links-block()
+	.main-page-wrap
+		.container
+			.row
+				.col-lg
+					+s-service
+				.col-lg.side-col.order-lg-first
+					+side-blocks('form')
+	//- +s-contact()
+	+footer()
+

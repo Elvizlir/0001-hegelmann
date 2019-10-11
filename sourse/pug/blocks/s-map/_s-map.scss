@@ -2,7 +2,7 @@
 	// z-index: 2;
 	&__block{
 		@include media-breakpoint-up(lg) {
-
+			z-index: 500;
 			position: absolute;
 			left: rem(25);
 			top: rem(138);
@@ -35,6 +35,11 @@
 	&__map-wrap{
 		position: relative;
 		z-index: -1;
+	}
+	.c-map{
+		img{
+			object-fit: cover;
+		}
 	}
 		 
 	@include media-breakpoint-up(xl) {}
